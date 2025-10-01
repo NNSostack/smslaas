@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMSlaas - Hoved API-side</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0ea5a4;--text:#0f172a}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#eef2f7, var(--bg));color:var(--text);padding:24px}
+    .card{max-width:720px;width:100%;background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.08);padding:36px}
+    h1{margin:0 0 8px;font-size:22px}
+    p.lead{margin:0 0 18px;color:#374151}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(14,165,164,0.12);color:var(--accent);font-weight:600;font-size:13px}
+    footer{margin-top:22px;color:#6b7280;font-size:14px}
+    a.action{display:inline-block;margin-top:14px;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .muted{color:#9ca3af}
+    @media (max-width:520px){.card{padding:20px}h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <span class="badge">SMSlaas</span>
+    <h1>Dette er hoved-API-siden for SMSlaas.dk</h1>
+    <p class="lead">Denne side fungerer som en kort informationsside. For at få adgang til API'en og tegne abonnement bedes du henvende dig til <strong>nocable ApS</strong>.</p>
+
+    <div>
+      <p><strong>Kontakt:</strong> nocable ApS</p>
+      <p><strong>Email:</strong> <a href="mailto:nfo@nocable.dk">info@nocable.dk</a></p> -->
+    </div>
+
+    <a class="action" href="/">Gå til forsiden</a>
+
+    <footer>
+      <small>&copy; <span id="year"></span> SMSlaas — Alle rettigheder forbeholdes.</small>
+    </footer>
+  </main>
+
+  <script>
+    // Automatisk sætter årstal
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+

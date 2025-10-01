@@ -1,0 +1,7 @@
+# Slå mappelister fra
+Options -Indexes
+
+# Nægt alle direkte anmodninger på .json
+<FilesMatch "\.json$">
+    Require all denied
+</FilesMatch>

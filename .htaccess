@@ -1,0 +1,5 @@
+Options -MultiViews
+RewriteEngine On
+
+# Fanger alt der ligner /smslaas/XYZ/ og sender til index.php
+RewriteRule ^([^/]+)/?$ index.php?config=$1 [L,QSA]
