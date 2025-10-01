@@ -245,7 +245,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 if ($success) {
                     $_SESSION['send_tracker']['count'] += 1;
                     $_SESSION['send_tracker']['last_sent'] = time();
-                    $send_message = "Koden er sendt til $phone. Indtast den nedenfor for at bekræfte.";
+                    $send_message = "Koden er sendt til $phone. Brug koden for at låse døren op.";
                 } else {
                     $send_message = "Fejl ved afsendelse (kode: {$sendResult['httpcode']}). Respons: " . htmlspecialchars($sendResult['response']);
                 }
